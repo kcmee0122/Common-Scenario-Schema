@@ -4,14 +4,14 @@ The scenario-based approach is used for generation of safety-critical scenarios.
 # Installation
 Installing Packages
 
-scipy >= 1.14.0
-h5py >= 3.12.1
-pandas >= 2.2.2
-colorama >= 0.4.6
-tqdm >= 4.66.4
-natsort >= 8.4.0
-openpyxl >= 3.1.5
-pymongo >= 4.8.0
+* scipy >= 1.14.0
+* h5py >= 3.12.1
+* pandas >= 2.2.2
+* colorama >= 0.4.6
+* tqdm >= 4.66.4
+* natsort >= 8.4.0
+* openpyxl >= 3.1.5
+* pymongo >= 4.8.0
 
 
 # Usage
@@ -36,8 +36,19 @@ rawPS_Dim: Adding the parameter dimension of an existing scenario
 rawPS_Extend: Extending parameter ranges for existing scenarios
 rawPS_Geometry: Changing road terrain in an existing scenario
 rawPS_New: Defining scenario parameters at the wrong point in time for a non-existent algorithm in an existing scenario catalog
+
 A.4. CSS for raw parameter space (Code)
 Create a schema for database with the generated raw parameter space. The code for generating the schema is css_for_RawPS.py. The output of the code is a JSON file.
 
 A.5. CSS for road (Code)
 This is the code that populates the schema with road information relevant to the scenario generation. The code for adding this information is css_for_road.py. The output of the code is a JSON file.
+
+<img width="820" height="419" alt="image" src="https://github.com/user-attachments/assets/72eb1d16-bf1f-440b-ad71-cc80572e941e" />
+
+
+B.1. Selection of parameter space & test automation (Code)
+This section explores the logical scenarios stored in the database to create detailed scenarios and automate simulations according to the single parameter distribution method defined by OpenSCENARIO.
+
+The simulator consists of MORAI SIM and CarMaker, and in the case of MORAI SIM, a detailed scenario is created in the form of xosc and the simulation is executed, and in the case of CarMaker, a parameter space(.csv) is created and used as an input for the simulation.
+
+we first create detailed scenarios and output the csv file and xosc file. Then, the detailed scenarios are executed in each simulator to output the simulation result file and GT file.
