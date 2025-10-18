@@ -1,0 +1,8 @@
+scipy
+h5py
+pandas
+colorama
+tqdm
+natsort
+openpyxl
+pymongo
