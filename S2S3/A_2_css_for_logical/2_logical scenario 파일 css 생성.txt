@@ -1,0 +1,2 @@
+xosc (MORAI) - version : python
+testrun (carmaker) - version : python(업데이트 예정)

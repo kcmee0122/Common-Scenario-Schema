@@ -1,0 +1,194 @@
+{
+    "admin": {
+        "filePath": {
+            "raw": " ",
+            "exported": " ",
+            "registration": " ",  
+            "perception": {
+                "LDT": " ",
+                "SF": " ",
+                "recognition": " "
+            },
+            "Decision": {
+                "maneuver": " "
+            }
+        },
+        "date": " ",
+        "dataType": " ",
+        "travelTime": " ",
+        "travelDistance": " ",
+        "fileSize": " ", 
+        "geoReference": {
+            "type": " ",
+            "coordinates": " "
+        },
+        "frameInterval": {
+            "frameStart": " ",
+            "frameEnd": " "
+        },
+        "sampleTime": " ",
+        "schemaVersion": " ",
+        "comment": " ", 
+        "CMGT": " ",  
+        "CAGT": " ",
+        "sensorConfiguration" : " ",  
+        "qualityOfData": " " 
+    },
+    "dynamic" : {
+        "events" : {
+            "event":{
+                "frameIndex" : " ",
+                "event_data" : {
+                    "id" : " ",
+                    "category" : " ",
+                    "recognition" : " ",
+                    "maneuver" : " "
+                },
+                "object_data" : {
+                    "relativePosition_x" : " ",
+                    "relativePosition_y" : " ",
+                    "relativeVelocity_x" : " ",
+                    "relativeVelocity_y" : " ",
+                    "relativeAcceleration_x" : " ",
+                    "relativeAcceleration_y" : " "
+                }
+             }
+        }    
+    },
+    "surroundings" : {
+        "frameIndex" : " ",
+        "id" : " ",
+        "objects" : {
+            "object" : {
+                "action_data":{
+                    "id" : " ",
+                    "category" : " ",
+                    "recognition" : " ",
+                    "maneuver" : " "
+                },
+                "object_data" : {
+                    "relativePosition_x" : " ",
+                    "relativePosition_y" : " ",
+                    "relativeVelocity_x" : " ",
+                    "relativeVelocity_y" : " ",
+                    "relativeAcceleration_x" : " ",
+                    "relativeAcceleration_y" : " "
+                }
+
+            }
+
+
+        }
+
+    },
+    "scenarios" : {
+        "dataSources": {
+            "expertKnowledge" : {
+                "reference": " ",
+                "scenario" : " "
+            },
+            "accidentData" : {
+                "name" : " ",
+                "year" : " ",
+                "COLLTYPE_MAIN" : " ",
+                "ACCTYPEA" : " ",
+                "ACCTYPEB" : " ",
+                "ACCTYPE_unknown" : " ",
+                "occurrence" : {
+                    "rank" : " "
+                }
+            }
+        },
+        "entities" : {
+            "name" : " ",
+            "target" : " ",
+            "category" : " ",
+            "boundingBox" : {
+                "dimensions" : {
+                    "height" : " ",
+                    "length" : " ",
+                    "width" : " "
+                }
+            },
+            "files" : {
+                "filepath" : " "
+            }
+        },
+        "storyboard" : {
+            "name" : " ",
+            "init" : {
+                "actions" : {
+                    "privates" : {
+                        "entityRef" : " ",
+                        "maneuver" : " "
+                    }
+                }
+            },
+            "stories" : {
+                "maneuverGroups" :{ 
+                    "actors" : {
+                        "entityRefs" : " "
+                    },
+                    "maneuvers" : {
+                        "events" : {
+                            "maneuver" : " "
+                        }
+                    }
+                }
+            }
+        }    
+    },   
+    "parameterSpace" : {
+        "reduceParam" : " ",
+        "samplingMethod" : " ",
+        "parameters" : {
+            "name" : " ",
+            "genParam" : {
+                "range" : {
+                    "max" : " ",
+                    "min" : " "
+                },
+                "samplePoint" : " ",
+                "value" : " "
+            }
+        }
+    },
+    "road" : {
+        "roadName" : " ",
+        "A2_LINK" : {
+            "ID" : " ",
+            "AdminCode" : " ",
+            "RoadRank" : " ",
+            "RoadType" : " ",
+            "LinkType" : " "
+        }          
+    },
+    "meta" : {
+        "frameInterval" : {
+            "frameStart" : " ",
+            "frameEnd" : " "
+        },
+        "threatAssessment" : {
+            "minTTC" : " ",
+            "maxLateralCollisionIndex" : " ",
+            "maxCollisionProbability" : " "
+        },
+        "complexityMeasures" : {
+            "E_curve" : " ",
+            "E_intersection" : " ",
+            "E_crowd" : " ",
+            "E_class" : " ",
+            "E_speed" : " ",
+            "E_threat" : " "
+        }
+    },
+    "falsePositive" : {
+        "collisionMode" : {
+            "weightFileName" : " ",
+            "event" : {
+                "frameIndex" : " ",
+                "prediction" : " "
+            }
+        }
+    }
+}
