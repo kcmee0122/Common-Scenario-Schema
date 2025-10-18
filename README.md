@@ -13,6 +13,7 @@ natsort >= 8.4.0
 openpyxl >= 3.1.5
 pymongo >= 4.8.0
 
+
 # Usage
 <img width="1843" height="939" alt="image" src="https://github.com/user-attachments/assets/3ef7552d-4dea-4c7e-8104-b566e4f829de" />
 
@@ -26,25 +27,6 @@ testrun (carmaker)
 A.2. CSS for logical scenario (Code)
 After the logical scenarios are created or programmed in the framework of CarMaker or MORAI SIM (i.e., XOSC), create a common scenario schema (CSS) corresponding to the scenario database. The schema code for databasing logical scenarios created with MORAI is css_for_xosc.py. The output of the code is a JSON file.
 
-##################### Setting ##########################
-
-# Logical scenario catalog
-TESTBED = 0
-SOTIF_1st = 0
-SOTIF_2nd = 1
-SOTIF_3rd = 0
-
-# Logical scenario toggle
-single_toggle = 1              # 1:ON  0:OFF
-i = 12                           # 생성할 Logical scenario 번호 (single toggle에 해당, 가장 아래 번호 리스트 확인 가능)
-
-multiple_toggle =0             # 1:ON  0:OFF
-
-# File path
-registration_dir = r"\\192.168.75.251\Shares\MORAI Scenario Data\Scenario Catalog for SOTIF\MORAI Project\Registration"
-save_dir = r"\\192.168.75.251\Shares\MORAI Scenario Data\Scenario Catalog for SOTIF\MORAI Project\Json"
-
-########################################################
 
 A.3. Generation of raw parameter space (Manual)
 Raw parameter space file name to create
